@@ -1,0 +1,22 @@
+/* #region RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion RESET */
+/* #region GENERAL */
+:root {
+    --main-blue: #0084fd;
+    --main-lilla: #9792e4;
+    --yellow: #fdc15f;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+/* #endregion GENERAL */
