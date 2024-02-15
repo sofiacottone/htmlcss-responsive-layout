@@ -340,8 +340,10 @@ li {
 /* #region GENERAL */
 :root {
     --main-blue: #0084fd;
+    --light-blue: #b5ddff;
     --main-lilla: #9792e4;
     --yellow: #fdc15f;
+    --gray: #7a7a7a;
 }
 
 body {
@@ -349,7 +351,7 @@ body {
 }
 
 .container {
-    max-width: 992px;
+    max-width: 740px;
     margin: auto;
     padding-inline: 10px;
 }
@@ -364,6 +366,14 @@ body {
     padding-inline: 10px;
 }
 
+i[class*="fa-"] {
+    font-size: 1.25rem;
+    vertical-align: bottom;
+}
+
+/*-----------------
+    buttons  
+------------------*/
 .btn {
     color: inherit;
     background-color: transparent;
@@ -377,6 +387,14 @@ body {
     width: fit-content;
 }
 
+.btn-bold {
+    padding: 10px 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
 .btn-primary {
     background-color: var(--main-lilla);
 }
@@ -384,6 +402,30 @@ body {
 .btn-secondary {
     background-color: #fff;
     color: #7a7a7a;
+}
+
+.btn-tertiary {
+    background-color: var(--main-blue);
+}
+
+/*-----------------
+    boxes  
+------------------*/
+.box {
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.box-primary {
+    background-color: #fff;
+}
+
+.box-secondary {
+    background-color: var(--main-lilla);
+}
+
+.box-tertiary {
+    background-color: var(--light-blue);
 }
 
 /* #endregion GENERAL */
@@ -408,11 +450,59 @@ header .row {
 }
 
 /* #endregion HEADER */
+/* #region MAIN */
+/*-----------------
+    INFO SECTION  
+------------------*/
+#info h2,
+#info .box .fa-solid {
+    color: var(--main-blue);
+}
+
+#info p {
+    color: var(--gray);
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+#info .col {
+    text-align: center;
+}
+
+#info .box,
+#info .top-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#info .box .top-col,
+#info .bottom-col {
+    text-align: left;
+}
+
+#info .box .bottom-col {
+    margin-bottom: -30px;
+    align-self: start;
+}
+
+#info .box .bottom-col img {
+    max-height: 300px;
+    margin-top: 20px;
+}
+
+#info .box .fa-solid {
+    font-size: 5.625rem;
+}
+
+
+
+/* #endregion MAIN */
 /* #region RESPONSIVE */
 /* da 768px a 992px | Tablet  */
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .container {
-        max-width: 742px;
+        max-width: 749px;
     }
 
     header {
@@ -423,7 +513,7 @@ header .row {
 /* da 993px in poi | Desktop  */
 @media screen and (min-width: 993px) {
     .container {
-        max-width: 1140px;
+        max-width: 973px;
     }
 
     header {
