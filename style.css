@@ -409,6 +409,34 @@ header .row {
 
 /* #endregion HEADER */
 /* #region RESPONSIVE */
-@media screen and (min-width: 992px) {}
+/* da 768px a 992px | Tablet  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        max-width: 742px;
+    }
+
+    header {
+        background-color: red;
+    }
+}
+
+/* da 993px in poi | Desktop  */
+@media screen and (min-width: 993px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    header {
+        background-color: green;
+    }
+
+    .nav-bar {
+        display: block;
+    }
+
+    .menu-burger {
+        display: none;
+    }
+}
 
 /* #endregion RESPONSIVE */
