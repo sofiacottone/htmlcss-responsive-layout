@@ -469,6 +469,10 @@ header .row {
     text-align: center;
 }
 
+#info .box {
+    height: 100%;
+}
+
 #info .box,
 #info .top-col {
     display: flex;
@@ -476,13 +480,9 @@ header .row {
     gap: 20px;
 }
 
-#info .box .top-col,
-#info .bottom-col {
-    text-align: left;
-}
-
 #info .box .bottom-col {
     margin-bottom: -30px;
+    margin-inline: auto;
     align-self: start;
 }
 
@@ -500,25 +500,39 @@ header .row {
 /* #endregion MAIN */
 /* #region RESPONSIVE */
 /* da 768px a 992px | Tablet  */
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) {
+    header {
+        background-color: red;
+    }
+
     .container {
         max-width: 749px;
     }
 
-    header {
-        background-color: red;
+    #info .col {
+        width: calc(100% / 3 - 20px);
     }
+
+    #info .big-col {
+        width: calc(100% / 3 * 2 - 20px);
+    }
+
+    #info .big-col .bottom-col {
+        margin-inline: 0;
+    }
+
 }
 
 /* da 993px in poi | Desktop  */
 @media screen and (min-width: 993px) {
+    header {
+        background-color: green;
+    }
+
     .container {
         max-width: 973px;
     }
 
-    header {
-        background-color: green;
-    }
 
     .nav-bar {
         display: block;
