@@ -558,6 +558,7 @@ section {
         max-width: 749px;
     }
 
+    /* info section  */
     #info .col {
         width: calc(100% / 3 - 20px);
     }
@@ -570,6 +571,14 @@ section {
         margin-inline: 0;
     }
 
+    /* planning section  */
+    #planning .col {
+        margin-inline: auto;
+    }
+
+    #planning .col>h2 {
+        font-size: 3rem;
+    }
 }
 
 /* da 993px in poi | Desktop  */
@@ -582,13 +591,32 @@ section {
         max-width: 973px;
     }
 
-
     .nav-bar {
         display: block;
     }
 
     .menu-burger {
         display: none;
+    }
+
+    /* planning section  */
+    #planning .row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #planning .row .col:first-child {
+        width: 60%;
+    }
+
+    #planning .row .col:nth-child(2) {
+        width: 40%;
+        margin-bottom: 0;
+        align-self: flex-end;
+    }
+
+    #planning .col>h2 {
+        font-size: 2rem;
     }
 }
 
