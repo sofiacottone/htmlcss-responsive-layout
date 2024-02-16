@@ -146,6 +146,18 @@ li {
     text-align: center;
 }
 
+.text-black {
+    color: #000;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.italic {
+    font-style: italic;
+}
+
 /* BORDERS */
 .border {
     border: 1px solid;
@@ -171,6 +183,14 @@ li {
     border-left: 1px solid;
 }
 
+.bradius-20 {
+    border-radius: 20px;
+}
+
+.bradius-40 {
+    border-radius: 40px;
+}
+
 /* #endregion TAILWIND PRESET */
 /* #region UTILITY */
 /*----------------
@@ -189,6 +209,10 @@ li {
 
 .m-t-20 {
     margin-top: 20px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
 }
 
 .m-r-20 {
@@ -413,7 +437,6 @@ i[class*="fa-"] {
 ------------------*/
 .box {
     padding: 30px;
-    border-radius: 20px;
 }
 
 .box-primary {
@@ -451,10 +474,15 @@ header .row {
 
 /* #endregion HEADER */
 /* #region MAIN */
+section {
+    line-height: 1.7;
+    margin-top: 40px;
+}
+
 /*-----------------
     INFO SECTION  
 ------------------*/
-#info h2,
+#info h3,
 #info .box .fa-solid {
     color: var(--main-blue);
 }
@@ -462,15 +490,10 @@ header .row {
 #info p {
     color: var(--gray);
     font-weight: bold;
-    line-height: 1.7;
 }
 
 #info .col {
     text-align: center;
-}
-
-#info .box {
-    height: 100%;
 }
 
 #info .box,
@@ -478,6 +501,11 @@ header .row {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+#info .box {
+    border-radius: 20px;
+    height: 100%;
 }
 
 #info .box .bottom-col {
@@ -495,6 +523,27 @@ header .row {
     font-size: 5.625rem;
 }
 
+/*---------------------
+    PLANNING SECTION  
+-----------------------*/
+#planning {
+    color: #fff;
+}
+
+#planning .col {
+    margin-block: 20px;
+    padding-inline: 40px;
+}
+
+#planning img {
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+#planning .btn {
+    border-radius: 100%;
+    padding: 14px 16px;
+}
 
 
 /* #endregion MAIN */
