@@ -158,6 +158,10 @@ li {
     font-style: italic;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 /* BORDERS */
 .border {
     border: 1px solid;
@@ -314,6 +318,10 @@ li {
     padding-bottom: 40px;
 }
 
+.p-t-40 {
+    padding-top: 40px;
+}
+
 /* 50 */
 .p-b-50 {
     padding-bottom: 50px;
@@ -322,6 +330,10 @@ li {
 /* 60 */
 .p-t-60 {
     padding-top: 60px;
+}
+
+.p-b-60 {
+    padding-bottom: 60px;
 }
 
 /*----------------
@@ -411,7 +423,8 @@ i[class*="fa-"] {
 #planning .col>h2,
 #testimonials .col>h2,
 #features h2,
-#about-us h2 {
+#about-us h2,
+#get-started h2 {
     font-size: 2rem;
 }
 
@@ -647,6 +660,63 @@ section {
     color: var(--main-lilla);
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+#about-us .about-us-quote {
+    max-width: 18.75rem;
+}
+
+/*------------------------
+    GET STARTED SECTION  
+-------------------------*/
+#get-started h3[class*="uppercase"] {
+    color: #bfbcee;
+    font-weight: 500;
+}
+
+#get-started .free-title {
+    font-size: 3rem;
+    color: var(--yellow);
+}
+
+#get-started p,
+footer p {
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+#get-started .btn {
+    padding: 20px 70px;
+    color: var(--main-lilla);
+    border-radius: 40px;
+}
+
+#get-started ul li {
+    display: inline;
+}
+
+#get-started ul li .fa-circle {
+    font-size: .375rem;
+    vertical-align: middle;
+    padding-inline: 6px;
+}
+
+#get-started ul li a {
+    text-decoration: underline;
+}
+
+/*------------------------
+    FOOTER SECTION  
+-------------------------*/
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+footer p>a,
+footer div>a {
+    color: var(--main-lilla);
+    text-decoration: underline;
 }
 
 /* #endregion MAIN */
