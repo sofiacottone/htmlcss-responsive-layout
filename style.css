@@ -410,7 +410,8 @@ i[class*="fa-"] {
 ------------------*/
 #planning .col>h2,
 #testimonials .col>h2,
-#features h2 {
+#features h2,
+#about-us h2 {
     font-size: 2rem;
 }
 
@@ -418,7 +419,6 @@ i[class*="fa-"] {
     buttons  
 ------------------*/
 .btn {
-    color: inherit;
     background-color: transparent;
     border: none;
     border-radius: 20px;
@@ -468,6 +468,22 @@ i[class*="fa-"] {
 
 .box-tertiary {
     background-color: var(--light-blue);
+}
+
+/*-----------------
+    image crop  
+------------------*/
+.img-cropper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-cropper>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* #endregion GENERAL */
@@ -554,10 +570,6 @@ section {
     padding-inline: 40px;
 }
 
-#planning .col>h2 {
-    font-size: 2rem;
-}
-
 #planning img {
     max-width: 80%;
     margin: 30px auto;
@@ -576,22 +588,9 @@ section {
     color: var(--gray);
 }
 
-#testimonials .col>h2 {
+#testimonials .col>h2,
+#about-us h2 {
     color: var(--main-lilla);
-    font-size: 2rem;
-}
-
-#testimonials .img-cropper {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-#testimonials .box .img-cropper>img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .testimonial-text .fa-quote-left {
@@ -605,10 +604,6 @@ section {
     letter-spacing: .1875rem;
     margin-top: 20px;
 }
-
-/* .testimonial {
-    margin-inline: 1.875rem;
-} */
 
 /*----------------------
     FEATURES SECTION  
@@ -625,13 +620,34 @@ section {
     color: var(--gray);
 }
 
-
 #features .box-number,
 #features .box h5 {
     font-weight: bold;
     color: var(--main-lilla);
 }
 
+/*--------------------
+    ABOUT US SECTION  
+---------------------*/
+#about-us .col .quotes {
+    position: relative;
+    width: fit-content;
+}
+
+#about-us .col .img-cropper::after {
+    content: open-quote;
+    color: var(--main-lilla);
+    font-size: 11rem;
+    position: absolute;
+    top: -66px;
+    right: 0;
+}
+
+#about-us .quote {
+    color: var(--main-lilla);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 /* #endregion MAIN */
 /* #region RESPONSIVE */
@@ -663,7 +679,8 @@ section {
         margin-inline: auto;
     }
 
-    #planning .col>h2 {
+    #planning .col>h2,
+    #about-us .col>h2 {
         font-size: 3rem;
     }
 
@@ -689,6 +706,19 @@ section {
         width: 50%;
     }
 
+    /* about us section  */
+    #about-us .container {
+        display: flex;
+    }
+
+    #about-us .about-us-quote {
+        margin-left: 30px;
+    }
+
+    #about-us .about-us-quote .quote {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
 }
 
 /* da 993px in poi | Desktop  */
