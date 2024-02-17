@@ -112,7 +112,7 @@ li {
 
 /* MARGIN (m) e PADDING (p) */
 .m-auto {
-    margin: auto;
+    margin-inline: auto;
 }
 
 .mr-auto {
@@ -281,6 +281,10 @@ li {
     padding-bottom: 20px;
 }
 
+.p-b-20 {
+    padding-bottom: 20px;
+}
+
 /* 30 */
 .p-y-30 {
     padding-top: 30px;
@@ -302,6 +306,12 @@ li {
 
 .p-r-30 {
     padding-right: 30px;
+}
+
+/* 40 */
+.p-y-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 /* 50 */
@@ -393,6 +403,15 @@ body {
 i[class*="fa-"] {
     font-size: 1.25rem;
     vertical-align: bottom;
+}
+
+/*----------------
+    TYPOGRAPHY  
+------------------*/
+#planning .col>h2,
+#testimonials .col>h2,
+#features h2 {
+    font-size: 2rem;
 }
 
 /*-----------------
@@ -535,6 +554,10 @@ section {
     padding-inline: 40px;
 }
 
+#planning .col>h2 {
+    font-size: 2rem;
+}
+
 #planning img {
     max-width: 80%;
     margin: 30px auto;
@@ -543,6 +566,70 @@ section {
 #planning .btn {
     border-radius: 100%;
     padding: 14px 16px;
+}
+
+/*-------------------------
+    TESTIMONIALS SECTION  
+--------------------------*/
+#testimonials .col>h3 {
+    text-transform: uppercase;
+    color: var(--gray);
+}
+
+#testimonials .col>h2 {
+    color: var(--main-lilla);
+    font-size: 2rem;
+}
+
+#testimonials .img-cropper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#testimonials .box .img-cropper>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.testimonial-text .fa-quote-left {
+    vertical-align: text-top;
+}
+
+.testimonial-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: .1875rem;
+    margin-top: 20px;
+}
+
+/* .testimonial {
+    margin-inline: 1.875rem;
+} */
+
+/*----------------------
+    FEATURES SECTION  
+-----------------------*/
+#features .box-number {
+    font-size: 3rem;
+}
+
+#features .box h5 {
+    font-size: 1.5rem;
+}
+
+#features .box p {
+    color: var(--gray);
+}
+
+
+#features .box-number,
+#features .box h5 {
+    font-weight: bold;
+    color: var(--main-lilla);
 }
 
 
@@ -579,6 +666,29 @@ section {
     #planning .col>h2 {
         font-size: 3rem;
     }
+
+    /* testimonial section  */
+    .testimonial .box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .testimonial-text {
+        width: 70%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    #testimonials .img-cropper {
+        margin-bottom: 0;
+    }
+
+    /* features section  */
+    #features .row>.col {
+        width: 50%;
+    }
+
 }
 
 /* da 993px in poi | Desktop  */
@@ -617,6 +727,15 @@ section {
 
     #planning .col>h2 {
         font-size: 2rem;
+    }
+
+    #planning .box {
+        padding: 1px 16px 20px;
+    }
+
+    /* features section  */
+    #features .row>.col {
+        width: calc(100% / 3);
     }
 }
 
