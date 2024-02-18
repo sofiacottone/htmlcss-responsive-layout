@@ -534,7 +534,7 @@ header {
 }
 
 header .row {
-    padding: 16px 30px;
+    padding-block: 16px;
     position: relative;
 }
 
@@ -608,6 +608,10 @@ section {
 #info p {
     color: var(--gray);
     font-weight: bold;
+}
+
+#info .col {
+    padding: 0;
 }
 
 #info .box,
