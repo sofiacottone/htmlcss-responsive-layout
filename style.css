@@ -560,6 +560,15 @@ header .row {
     display: none;
 }
 
+.nav-bar .btn:hover {
+    background-color: #B5DDFF;
+    color: var(--main-blue);
+}
+
+.nav-bar ul li:not(:last-child):hover {
+    text-decoration: underline overline #B5DDFF;
+}
+
 .mobile-nav {
     position: absolute;
     top: 30px;
@@ -626,6 +635,11 @@ section {
 
 #info .box .fa-solid {
     font-size: 5.625rem;
+}
+
+#info .btn:hover {
+    background-color: white;
+    color: var(--main-blue);
 }
 
 /*---------------------
