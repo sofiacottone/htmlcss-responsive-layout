@@ -269,6 +269,11 @@ li {
     margin-top: 80px;
 }
 
+/* 90 */
+.m-t-90 {
+    margin-top: 90px;
+}
+
 /*----------------
     padding  
 ------------------*/
@@ -548,7 +553,6 @@ header .row {
 }
 
 .menu-mobile input:checked~.mobile-nav {
-    /* display: block; */
     max-height: 290px;
 }
 
@@ -577,7 +581,6 @@ header .row {
     text-decoration: underline overline var(--main-blue);
 }
 
-
 /* #endregion HEADER */
 /* #region MAIN */
 section {
@@ -596,10 +599,6 @@ section {
 #info p {
     color: var(--gray);
     font-weight: bold;
-}
-
-#info .col {
-    text-align: center;
 }
 
 #info .box,
@@ -651,6 +650,11 @@ section {
     padding: 14px 16px;
 }
 
+#planning .btn:hover {
+    background-color: #bfbcee;
+    color: #fff;
+}
+
 /*-------------------------
     TESTIMONIALS SECTION  
 --------------------------*/
@@ -697,6 +701,11 @@ section {
     color: var(--main-lilla);
 }
 
+#features .btn:hover {
+    background-color: #bfbcee;
+    color: var(--main-lilla);
+}
+
 /*--------------------
     ABOUT US SECTION  
 ---------------------*/
@@ -724,6 +733,11 @@ section {
     max-width: 18.75rem;
 }
 
+#about-us .btn:hover {
+    background-color: #bfbcee;
+    color: var(--main-lilla);
+}
+
 /*------------------------
     GET STARTED SECTION  
 -------------------------*/
@@ -747,6 +761,11 @@ footer p {
     padding: 20px 70px;
     color: var(--main-lilla);
     border-radius: 40px;
+}
+
+#get-started .btn:hover {
+    background-color: #bfbcee;
+    color: #fff;
 }
 
 #get-started ul li {
@@ -781,10 +800,6 @@ footer div>a {
 /* #region RESPONSIVE */
 /* da 768px a 992px | Tablet  */
 @media screen and (min-width: 769px) {
-    header {
-        background-color: red;
-    }
-
     .container {
         max-width: 749px;
     }
@@ -851,10 +866,6 @@ footer div>a {
 
 /* da 993px in poi | Desktop  */
 @media screen and (min-width: 993px) {
-    header {
-        background-color: green;
-    }
-
     .container {
         max-width: 973px;
     }
