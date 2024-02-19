@@ -2,4 +2,4 @@
 
 Approach: Mobile first 📱 --> 💻
 ---
-Preview at: https://github.com/sofiacottone/htmlcss-responsive-layout.git
+Preview at: https://sofiacottone.github.io/htmlcss-responsive-layout/
